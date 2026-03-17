@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Emisora Online</title>
-  <style>
-    body {
-      margin: 0;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
-    }
+<meta charset="UTF-8">
+<title>JUMBO RADIO</title>
 
-    .container {
-      margin-top: 100px;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: white;
+  text-align: center;
+}
 
-    h1 {
-      font-size: 40px;
-    }
+/* CONTENEDOR */
+.container {
+  margin-top: 80px;
+}
 
-    p {
-      font-size: 18px;
-      color: #ccc;
-    }
+/* LOGO AVIÓN */
+.plane {
+  font-size: 60px;
+  animation: volar 5s linear infinite;
+}
 
-    .player {
-      margin-top: 30px;
-      background: #111;
-      padding: 20px;
-      border-radius: 15px;
-      display: inline-block;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
+/* ANIMACIÓN */
+@keyframes volar {
+  0% { transform: translateX(-200px); }
+  100% { transform: translateX(200px); }
+}
 
-    audio {
-      width: 300px;
-      margin-top: 10px;
-    }
+/* TARJETA */
+.player {
+  background: #1db954;
+  padding: 30px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 30px;
+  color: black;
+}
 
-    .status {
-      margin-top: 15px;
-      color: #00ffcc;
-    }
+/* BOTÓN */
+audio {
+  width: 300px;
+  margin-top: 15px;
+}
 
-  </style>
+/* TEXO */
+h1 {
+  font-size: 40px;
+}
+
+p {
+  color: #ccc;
+}
+</style>
+
 </head>
 <body>
 
-  <div class="container">
-    <h1>🎧 Mi Emisora Online</h1>
-    <p>Transmitiendo en vivo 24/7</p>
+<div class="container">
 
-    <div class="player">
-      <h3>🔴 EN VIVO</h3>
+  <!-- AVIÓN -->
+  <div class="plane">✈️</div>
 
-      <audio controls autoplay>
-        <source src="http://192.168.1.10:8000/stream" type="audio/mpeg">
-        Tu navegador no soporta audio
-      </audio>
+  <h1>JUMBO RADIO</h1>
+  <p>Transmitiendo en vivo 24/7</p>
 
-      <div class="status">Conectado ✔</div>
-    </div>
+  <!-- REPRODUCTOR -->
+  <div class="player">
+    <h3>🔴 EN VIVO</h3>
+
+    <audio controls autoplay>
+      <source src=https://jumbo0404.github.io/JUMBO1/ type="audio/mpeg">
+    </audio>
   </div>
+
+</div>
 
 </body>
 </html>
