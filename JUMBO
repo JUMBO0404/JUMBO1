@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Emisora Online</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    .player {
+      margin-top: 30px;
+      background: #111;
+      padding: 20px;
+      border-radius: 15px;
+      display: inline-block;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    audio {
+      width: 300px;
+      margin-top: 10px;
+    }
+
+    .status {
+      margin-top: 15px;
+      color: #00ffcc;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎧 Mi Emisora Online</h1>
+    <p>Transmitiendo en vivo 24/7</p>
+
+    <div class="player">
+      <h3>🔴 EN VIVO</h3>
+
+      <audio controls autoplay>
+        <source src="http://192.168.1.10:8000/stream" type="audio/mpeg">
+        Tu navegador no soporta audio
+      </audio>
+
+      <div class="status">Conectado ✔</div>
+    </div>
+  </div>
+
+</body>
+</html>
